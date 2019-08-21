@@ -1,0 +1,19 @@
+current directory: /Users/kota/workspace/projects/firewords/vendor/bundle/ruby/2.6.0/gems/byebug-11.0.1/ext/byebug
+/Users/kota/.rbenv/versions/2.6.3/bin/ruby -I /Users/kota/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20190821-73769-1h0mcqy.rb extconf.rb
+creating Makefile
+
+current directory: /Users/kota/workspace/projects/firewords/vendor/bundle/ruby/2.6.0/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/kota/workspace/projects/firewords/vendor/bundle/ruby/2.6.0/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/kota/workspace/projects/firewords/vendor/bundle/ruby/2.6.0/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20190821-73769-gz885u/byebug
