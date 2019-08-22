@@ -7,6 +7,7 @@ App.venue = App.cable.subscriptions.create "VenueChannel",
 
   received: (data) ->
     # Called when there's incoming data on the websocket for this channel
+    alert data['poem']
 
-  speak: ->
-    @perform 'speak'
+  speak: (poem) ->
+    @perform 'speak', poem: poem
