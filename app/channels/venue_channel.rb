@@ -8,7 +8,6 @@ class VenueChannel < ApplicationCable::Channel
   end
 
   def speak (data)
-    ActionCable.server.broadcast 'venue_channel', poem: data['poem']
-    #Poem.create! content: data['poem']
+    Poem.create! content: data['poem']
   end
 end
