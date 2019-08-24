@@ -1,6 +1,7 @@
 class VenueChannel < ApplicationCable::Channel
   def subscribed
     stream_from "venue_channel"
+    stream_for "3"
   end
 
   def unsubscribed
@@ -8,6 +9,6 @@ class VenueChannel < ApplicationCable::Channel
   end
 
   def speak (data)
-    Poem.create! content: data['poem']
+    Poem.create! content: data['poem'], group: data['group']
   end
 end

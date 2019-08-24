@@ -3,6 +3,6 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $(document).on 'keypress', '[data-behavior~=venue_speaker]', (event) ->
   if event.keyCode is 13 # return = send
-    App.venue.speak event.target.value
+    App.venue.speak event.target.value, $('#group').val()
     event.target.value = ''
     event.preventDefault()
